@@ -1,0 +1,175 @@
+@import "../../breakpoints.scss";
+
+
+.footer {
+    margin: 10px 0;
+    color: white;
+
+    @include respond-to('large') {
+        margin-left: 68px;
+    }
+
+    @include respond-to('large') {
+        display: flex;
+        width: 85%;
+
+    }
+
+    &__container {
+        font-size: 20px;
+        position:absolute;
+        left: 15%;
+        width: 100%;
+        @include respond-to('large') {
+        left: 10%;
+        width: 100%;
+        }
+    
+    }
+
+    &__container__second {
+        font-size: 20px;
+        position:absolute;
+        left: -2%;
+        margin: 27px 0px;
+
+
+        @include respond-to('large') {
+            font-size: 20px;
+        position:absolute;
+        left: 5%;
+        margin: 47px 0px;
+    
+        }
+    }
+}
+
+.firstposition .secondposition {
+    position: relative;
+
+} 
+
+
+
+.image {
+    width: 100%;
+    margin: 20px 0;
+
+    @include respond-to('large') {
+        margin-left:60px;
+    }
+    
+   
+}
+
+
+.buttonClass {
+    font-size:10px;
+    font-family:Arial;
+    width:140px;
+    height:40px;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#d83526;
+    font-weight:bold;
+    border-radius:8px;
+    box-shadow:inset 0px 1px 0px 0px #f29c93;
+    text-shadow:inset 0px 1px 0px #b23e35;
+    background:#920303;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    margin: 100px 0px;
+
+
+    @include respond-to('large') {
+        font-size:16px;
+    width:160px;
+    height:40px;
+    border-width:1px;
+    color:#ffffff;
+    text-align: flex-start;
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    margin: 100px 0px;
+    }
+      &:hover {
+          background: linear-gradient(#ce0100, #fe1a00);
+        }
+  
+    }
+
+
+
+.img {
+    width: 100%;
+
+}
+
+
+.wrapperButton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include respond-to('large') {
+        
+       
+        width: 90%;
+    }
+    
+}
+
+.footerstyle.buttonPosition {
+    display: flex;
+    position: absolute;
+}
+
+
+
+
+
+.footer__app,.footer__app__second  {
+    position:absolute;
+    left: 8%;
+    color: white;
+    font-size: 16px;
+
+    @include respond-to('large') {
+        left: 40%;
+    }
+}
+
+.footer__app {
+    margin: 29px 0;
+    width: 100%;
+
+    @include respond-to('large') {
+        left: 50%;
+    }
+}
+
+ 
+
+.footer__app__second {
+    margin:60px 0;
+
+    @include respond-to('large') {
+        left: 50%;
+    }
+    }
+
+
+
+    .icons {
+        position: absolute;
+        left: 20%;
+        margin: -55px 5px;
+
+
+        @include respond-to('large') {
+            display: none;
+        }
+    }

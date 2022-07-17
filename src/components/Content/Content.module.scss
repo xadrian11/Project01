@@ -1,0 +1,113 @@
+@import "../../breakpoints.scss";
+
+
+.headline {
+  font-size: 65px;
+  padding-top: 20px;
+  z-index: 2;
+  text-align: end;
+
+  @include respond-to('large') {
+    font-size: 90px;
+    padding-top: 50px;
+    text-align: start;
+}
+  &::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 80px;
+  margin-right: 5px;  
+  z-index: -1;
+  background-color: rgba(0,0,0,1);
+    }
+
+    @include respond-to('large') {
+     width: 500px;
+  }
+}
+
+.span {
+  margin: 0;
+  color: white;
+  &::after {
+    display: inline-block;
+  }
+}
+
+
+
+
+.swiper-slide .swiper-slide-active {
+  @include respond-to('large') {
+    width: 1000px;
+}
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  text-align: center;
+  @include respond-to('large') {
+      font-size: 2rem;
+      text-align: start;
+  }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    @include respond-to('large') {
+      justify-content: flex-start;
+  }
+}
+
+.buttonClass {
+  font-size:10px;
+  font-family:Arial;
+  width:140px;
+  height:40px;
+  border-width:1px;
+  color:#ffffff;
+  border-color:#d83526;
+  font-weight:bold;
+  border-radius:8px;
+  box-shadow:inset 0px 1px 0px 0px #f29c93;
+  text-shadow:inset 0px 1px 0px #b23e35;
+  background:#920303;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+
+  @include respond-to('large') {
+    font-size: 17px;
+    width: 200px;
+
+}
+
+    &:hover {
+        background: linear-gradient(#ce0100, #fe1a00);
+      }
+
+  }
+
+
+  .slider {
+    padding-top: 60px;
+    width: 100%;
+    @include respond-to('large') {
+      width: 45%;
+      display: flex;
+  }
+  }
+
+
+  .swiper-slide swiper-slide-active{
+    @include respond-to('large') {
+      display: flex;
+      justify-content: center;
+  }
+    
+  }
+  
+  
+       

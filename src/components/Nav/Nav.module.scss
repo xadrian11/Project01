@@ -1,0 +1,19 @@
+@import "../../breakpoints.scss";
+
+.logoContainer {
+    display: flex;
+    justify-content: flex-start;
+    
+    @include respond-to('large') {
+        position: relative;
+     }
+    
+}
+
+
+.logo {
+    @include respond-to('large') {
+        height: 40px;
+        padding-left: 70px;
+     }
+}

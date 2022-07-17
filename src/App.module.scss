@@ -1,0 +1,8 @@
+@import "./breakpoints.scss";
+
+.app {
+    @include respond-to('large') {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
